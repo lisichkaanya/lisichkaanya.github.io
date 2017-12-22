@@ -1,0 +1,206 @@
+*{
+    box-sizing: border-box;
+}
+
+body,
+html {
+    width: 100%;
+    height: 100%;
+}
+
+.container,
+.navbar {
+    padding-left: 0;
+    padding-right: 0;
+    font-weight: 500;
+}
+
+video {
+    width:100%;
+}
+
+/* Плавні зміни властивостей лінків */
+
+a {
+    -webkit-transition: all 0.2s;
+    -moz-transition: all 0.2s;
+    transition: all 0.2s;
+}
+
+/*************************************/
+
+/* Зміни CSS коду розпочинати звідси */
+
+/*************************************/
+
+section {
+    min-height: 100vh;
+    /* !!! Тимчасово для відладки !!! Висота секцій рівна висоті екрану */
+}
+
+
+#s2 {
+    min-height: 100vh;
+}
+
+#s3 {
+    min-height:inherit;
+}
+
+#s4 {
+  padding: 50px 0;
+    min-height:inherit;
+}
+
+#s4 a {
+    margin-left: 10px;
+
+}
+#s4 a:hover{
+    color: #d00000;
+    text-decoration-line: line-through;
+}
+
+a {
+    color: #d00000;
+    /* Колір текстових лінків */
+}
+
+h1 {
+    font-size: 35px;
+    font-family: helvetica;
+    font-weight: 900;
+    letter-spacing: 10px;
+    text-align: center;   
+    text-transform: uppercase;
+    padding-bottom: 30px;
+    padding-top: 70px;
+}
+
+h2 {
+    font-size: 30px;
+    font-family: helvetica;
+    font-weight: 600;
+    letter-spacing: 10px;
+    justify-content:center;
+    padding-bottom: 30px;
+    
+}
+
+ p {
+    font-size: 15px;
+    font-family: helvetica;
+    font-weight: 700;
+    letter-spacing: 3px;
+    text-align: left;
+    padding-top: 10px;
+    line-height: 40px;
+}
+
+
+#s2 p {
+    font-size: 17px;
+    font-family: helvetica;
+    font-weight: 900;
+    letter-spacing: 30px;
+    text-align:center;
+    line-height: 40px;
+}
+#s2 .p2 {
+    font-size: 14px;
+    font-family: helvetica;
+    font-weight: 500;
+    letter-spacing: 10px;
+    text-align:center;
+    
+}
+#s2 .p6 {
+    font-size: 17px;
+    font-family: helvetica;
+    font-weight:bold;
+    letter-spacing: 15px;
+    text-align:center;
+}
+
+#s2 .p8 {
+    font-size: 19px;
+    font-family: helvetica;
+    font-weight:bolder;
+    letter-spacing: 15px;
+    text-align: center;
+}
+
+#s2 .p9 {
+    font-size: 21px;
+    font-family: helvetica;
+    font-weight:bolder;
+    letter-spacing: 15px;
+    text-align: center;
+    text-decoration: line-through;
+}
+#s2 .p10 {
+    font-size: 23px;
+    font-family: helvetica;
+    font-weight:black;
+    letter-spacing: 15px;
+    text-align: center;
+    padding-top: 50px;
+    text-decoration: line-through;
+    color: #000aff;
+}
+}
+#s2 .p4 {
+    text-align: center;
+    word-spacing: 70px;
+}
+
+.gallery{
+    margin-top: 25px;
+}
+
+.sl1 {
+    margin-top: 25px;
+}
+
+.article {
+    line-height: 50px;    
+    text-align: justify;
+    word-spacing: 10px;
+}
+
+.text-container {
+    margin-left: 0;
+    margin-right: 0;
+    font-size: 9pt;
+}
+
+
+a:focus,
+a:hover {
+    color: #ffffff;
+    /* Колір текстових лінків для псевдокласів */
+}
+
+/**************************************/
+
+/* Зміна властивостей для breakpoints */
+
+/**************************************/
+
+@media screen and (max-width:575px) {
+    .container,
+    .navbar {
+        padding-left: 15px;
+        /* Для Small додати відступи */
+        padding-right: 15px;
+        /* зліва та справа у .container та .navbar */
+    }
+
+    /* Приклад зміни відступів зверху, знизу для секцій на Small екранах */
+    section {
+/*        padding: 25px 0;*/
+    }
+
+}
+
+@media screen and (max-width:767px) {}

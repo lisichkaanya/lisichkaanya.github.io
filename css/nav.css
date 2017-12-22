@@ -1,0 +1,66 @@
+/*********************************/
+/* Приклад коду властивостей для */
+/* навігаційної панелі .navbar   */
+/* з ідентифікатором #mainNav    */
+/*********************************/
+
+#mainNav {
+    padding-top: 1.5rem;  /* Navbar зміщений вниз на 1.5rem за рахунок відступу зверху */
+    background-color: rgba(255, 255, 255, 0);
+}
+
+#mainNav.navbar-shrink{
+    background-color: rgb(0, 0, 0);
+}
+
+#mainNav .js-scroll-trigger {
+    display:inline-block;
+    margin: 0 15px;
+}
+
+#mainNav >.container, .navbar>.container-fluid {
+    justify-content: center;
+}
+
+/* Кінець властивостей лінків меню */
+
+
+/* Зміна вигляду навігаційної панелі для екранів менше 767px */
+/* працює у парі з додатковим класом для .navbar */
+/* .navbar-expand-md. УВАГА! При зміні на клас .navbar-expand-sm */
+/* або .navbar-expand-lg необхідно змінити точку breakpoints на  */
+/* 565px або 991px відповідно до обраного класу  */
+
+@media screen and (max-width: 767px) {
+    
+    /* Зміна властивостей усіх контейнерів всередині #page-top */    
+    #page-top .container {
+        max-width: 100%;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    
+    /* Зміна властивостей контейнера всередині */
+    /* навігаційної панелі #mainNav */    
+    #mainNav .container {
+        padding-left: 0;
+        padding-right: 0;
+    }
+    
+    #mainNav .nav-link {
+        border-radius: 0;
+        margin: 0;
+    }
+    
+    #mainNav .nav-link {
+        padding: .5rem 1.5rem;
+        border-top: 1px solid rgb(255, 0, 0);
+    }
+    
+    #mainNav .nav-link,
+    #mainNav .nav-link.active,
+    #mainNav.navbar-shrink .nav-link:hover {
+        background: transparent;
+    }
+    /* Кінець змінам властивостей лінків меню */    
+}
